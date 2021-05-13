@@ -1,30 +1,15 @@
 public class Main {
     public static void main(String args []){
 
+        Grafo g = new Grafo(4);
 
-        Grafo g = new Grafo(3);
-
-        g.gerarMatrizAdjacencia();
-        System.out.println();
+        g.gerarMatrizAdjacencia(1, 2, 4);
+        g.gerarMatrizAdjacencia(2, 1, 4);
+        g.gerarMatrizAdjacencia(2, 3, 5);
+        g.gerarMatrizAdjacencia(3, 2, 5);
+        g.gerarMatrizAdjacencia(3, 4, 6);
+        g.gerarMatrizAdjacencia(4, 3, 6);
 
         g.imprimir();
-
-//        double[][] matrizDeDistancia = new double[2][2];
-//
-//
-//        for (int i = 0; i < 2; i++) {
-//            for (int j = 0; j < 2; j++) {
-//                matrizDeDistancia[i][j] = Math.random()*10;
-//            }
-//        }
-//
-//        for (int i = 0; i < 2; i++) {
-//            for (int j = 0; j < 2; j++) {
-//                System.out.print(matrizDeDistancia[i][j]+ " " );
-//
-//            }
-//            System.out.println();
-//        }
-
     }
 }
